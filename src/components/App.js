@@ -26,7 +26,7 @@ class App extends Component {
               <div className="align-self-center">
                 <h1 className="text-center">Countdown to {this.state.deadline}</h1>
                 <Clock deadline={this.state.deadline}/>
-                <input onChange={ e => this.setState({newDeadline: e.target.value})} className="p-1" type="text"/>
+                <input onChange={ e => this.setState({newDeadline: e.target.value})} className="p-1" type="text" placeholder="Add your own date; e.g., January 1, 2019"/>
                 <button onClick={() => this.changeDeadline()} className="btn btn-outline-light w-75 my-3 d-block mx-auto">Let's start!</button>
               </div>
             </div>
